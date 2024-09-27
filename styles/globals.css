@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.top_mid {
+  width: 100%;
+  max-width: 50%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 0 1rem;
+  background-color: #0a0011;
+}
+
+@media (min-width: 640px) {
+  .top_mid {
+    grid-template-columns: 200px auto auto;
+    margin-left: 27.5%;
+  }
+}
+.top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 95% auto;
+}
+.text {
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .text {
+    margin-left: 50px;
+  }
+}
+.sign {
+  margin-top: 50%;
+  display: flex;
+}
+.date {
+  width: fit-content;
+  height: 5vh;
+  grid-template-rows: auto auto;
+  display: grid;
+  text-align: center;
+}
+.button {
+  width: 100%;
+  height: 2vh;
+  border-color: #0a0011;
+  border-width: 0.2vh;
+  border-radius: 1vh;
+  background-color: #00ff62;
+  text-decoration: none;
+  color: azure;
+}
+.button:hover {
+  color: #0a0011;
+  border-color: blueviolet;
+  box-shadow: #171717;
+}
+header {
+  padding-top: 1rem; /* py-3 */
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center; /* items-center */
+  justify-content: space-between; /* justify-between */
+  padding-left: 1.25rem; /* px-5 */
+  padding-right: 1.25rem;
+  background-color: #0a0011;
+}
+
+.header-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold; /* font-bold */
+  display: flex;
+  justify-content: center; /* justify-center */
+  color: whitesmoke;
+}
+
+.header-links {
+  display: inline-flex; /* inline-flex */
+  flex-direction: row; /* flex-row */
+  flex-wrap: nowrap; /* flex-nowrap */
+  justify-content: space-evenly; /* justify-evenly */
+  gap: 1.25rem; /* gap-5 */
+  color: whitesmoke;
+}
+
+.header-link {
+  font-size: 1.125rem; /* text-lg */
+  color: whitesmoke;
+}
+.header-titlee {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold; /* font-bold */
+  display: flex;
+  justify-content: center; /* justify-center */
+  color: whitesmoke;
+  text-align: right;
+}
