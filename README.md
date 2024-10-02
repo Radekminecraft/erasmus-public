@@ -7,4 +7,3 @@
 
 
 Keep in mind, this is a pretty rushed project
-no pigs were hurt during the creation of this project
